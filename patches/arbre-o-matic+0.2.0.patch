@@ -1,0 +1,22 @@
+diff --git a/node_modules/arbre-o-matic/assets/scripts/arbreomatic/main.js b/node_modules/arbre-o-matic/assets/scripts/arbreomatic/main.js
+index 36bc437..a98f79a 100644
+--- a/node_modules/arbre-o-matic/assets/scripts/arbreomatic/main.js
++++ b/node_modules/arbre-o-matic/assets/scripts/arbreomatic/main.js
+@@ -12,3 +12,6 @@ import '../vendor/seedrandom'
+ import '../vendor/parse-gedcom'
+ 
+ import './ui'
++
++import {loadExternal1} from './ui';
++export const loadExternal = loadExternal1;
+diff --git a/node_modules/arbre-o-matic/assets/scripts/arbreomatic/ui.js b/node_modules/arbre-o-matic/assets/scripts/arbreomatic/ui.js
+index 1fa90a9..322f9d3 100644
+--- a/node_modules/arbre-o-matic/assets/scripts/arbreomatic/ui.js
++++ b/node_modules/arbre-o-matic/assets/scripts/arbreomatic/ui.js
+@@ -614,5 +614,6 @@ $(document).ready(function() {
+     }
+ });
+ 
++export const loadExternal1 = loadExternal;
+ // TODO remove (debug)
+ //loadExternal('test.ged');

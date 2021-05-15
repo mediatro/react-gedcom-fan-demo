@@ -6,14 +6,23 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "arbre-o-matic": "FlorianCassayre/Arbre-o-matic",
+    "arraybuffer-loader": "^1.0.8",
+    "core-js": "^2.5.7",
+    "linebreak": "^1.0.2",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "raw-loader": "^4.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "sass": "^1.32.13",
+    "transform-loader": "^0.2.4",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +43,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.16",
+    "babel-loader": "8.1.0",
+    "customize-cra": "^1.0.0",
+    "i18n-webpack-plugin": "^1.0.0",
+    "react-app-rewired": "^2.1.8"
   }
 }
